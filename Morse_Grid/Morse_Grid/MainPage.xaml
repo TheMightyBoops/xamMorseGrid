@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Morse_Grid" x:Class="Morse_Grid.MainPage">
+    <Grid x:Name="LayoutRoot" BackgroundColor="#555555">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Place new controls here -->
+        <Label x:Name="morseLabel" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="0" Grid.Column="0"/>
+        <Label x:Name="textLabel" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="1" Grid.Column="0" />
+        <Button Text="." Clicked="dotClick" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="0"/>
+        <Button Text="-"  Clicked="dashClick" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="1"/>
+        <Button Text="[]" Clicked="spaceClick" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Grid.Row="2" Grid.Column="2"/>
+
+    </Grid>
+</ContentPage>
